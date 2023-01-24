@@ -1,0 +1,45 @@
+Technologies used:
+
+Development Server
+    Vagrant
+    Oracle Virtualbox
+Application Code: 
+    Python
+    Django (Web framework for Python)
+    Django REST framework (Provides set of features for making standard REST APIs)
+Tools:
+    git
+    Atom (maybe will still use VS code)
+    Chrome extension - Mod header (Easily modify HTTP headers)
+
+
+Source code on Github:
+    https://github.com/LondonAppDev/profiles-rest-api
+
+How to ask questions on stack overflow:
+    https://londonappdeveloper.com/how-to-ask-questions-on-stack-overflow-and-get-answers/
+
+Sources for downloading the required tools:
+    vagrant (didn't work)
+        https://www.vagrantup.com/
+    Vagrant (did work)
+        https://www.vagrantup.com/Downloads
+    ModHeader
+        https://chrome.google.com/webstore/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj?hl=en
+    Atom
+        https://github.blog/2022-06-08-sunsetting-atom/
+    Git
+        https://git-scm.com/
+    Cheatsheet
+        https://github.com/LondonAppDev/build-a-backend-api-python-drf-beginner-cheat-sheet/blob/master/README.md
+    Virtualbox 6.1
+        https://www.virtualbox.org/wiki/Download_Old_Builds_6_1
+
+Gitignore source:
+    https://gist.github.com/LondonAppDev/dd166e24f69db4404102161df02a63ff
+
+Markwdown-Cheatsheet
+    https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+MIT License:
+    https://choosealicense.com/licenses/mit/
