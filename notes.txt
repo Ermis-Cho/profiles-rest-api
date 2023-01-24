@@ -54,7 +54,7 @@ $ ssh-keygen -t rsa -b 4096 -C "ermis.chorinopoulos@gmail.com"
 $ vagrant init ubuntu/bionic64
 
 Paste the vagrant file from the course
-    https://gist.githubusercontent.com/LondonAppDev/199eef145a21587ea866b69d40d28682/raw/cb5a18593cf522922bf34594b8d9b70de43f9264/Vagrantfile
+    https://gist.github.com/LondonAppDev/199eef145a21587ea866b69d40d28682
 
 #How to start a vagrant instance
     #Go to the directory with the vagrant file
@@ -64,3 +64,27 @@ Paste the vagrant file from the course
     vagrant ssh
 
 All of the files in the project are synchronized (2 ways) with the vagrant instance unter the directory "/vagrant"
+
+# How to push all local changes to the remote branch
+    git push origin
+
+# How to create a Python virtual environment
+    python -m venv ~/env
+    # How to activate it (in cli)
+    source ~/env/bin/activate
+
+    # How to deactivate it (in cli)
+    deactivate
+
+# How to install requirements from requirements.txt
+Note: Virtual environment must be activated
+    pip install -r requirements.txt
+
+#Django Management Commands
+    # Create new Django project
+        django-admin.py startproject profiles_project  .
+    # Create new Django app
+        python manage.py startapp profiles_api
+
+    # How to start Django development server
+        python manage.py runserver 0.0.0.0:8000
