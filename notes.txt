@@ -43,3 +43,24 @@ Markwdown-Cheatsheet
 
 MIT License:
     https://choosealicense.com/licenses/mit/
+
+#How to push your local git commit to github
+
+#Create ssh key if it doesn't exist
+$ ls ~/.ssh
+$ ssh-keygen -t rsa -b 4096 -C "ermis.chorinopoulos@gmail.com"
+
+#Create a vagrant file for ubuntu
+$ vagrant init ubuntu/bionic64
+
+Paste the vagrant file from the course
+    https://gist.githubusercontent.com/LondonAppDev/199eef145a21587ea866b69d40d28682/raw/cb5a18593cf522922bf34594b8d9b70de43f9264/Vagrantfile
+
+#How to start a vagrant instance
+    #Go to the directory with the vagrant file
+    vagrant up
+
+#How to connect to the machine you created
+    vagrant ssh
+
+All of the files in the project are synchronized (2 ways) with the vagrant instance unter the directory "/vagrant"
