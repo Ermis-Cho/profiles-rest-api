@@ -88,3 +88,24 @@ Note: Virtual environment must be activated
 
     # How to start Django development server
         python manage.py runserver 0.0.0.0:8000
+
+Django models:
+    https://docs.djangoproject.com/en/1.11/topics/db/models/
+Django model fields:
+    https://docs.djangoproject.com/en/1.11/ref/models/fields/
+Django handling auth:
+    https://docs.djangoproject.com/en/1.11/topics/auth/customizing/#auth-custom-user
+
+PEP 8 Guidelines:
+    https://peps.python.org/pep-0008/
+
+Django (like Ansible) saves the instructions to create a table based on the created models
+using files called migrations
+in cli:
+cd /vagrant
+source ~env/bin/activate
+python manage.py makemigrations <name_of_the_app_to_make_migrations>
+e.g. (env) vagrant@ubuntu-bionic:/vagrant$ python manage.py makemigrations profiles_api
+
+# How to make migrations/set up a database
+(env) vagrant@ubuntu-bionic:/vagrant$ python manage.py migrate
