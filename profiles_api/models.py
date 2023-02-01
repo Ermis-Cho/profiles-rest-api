@@ -12,7 +12,7 @@ class UserProfileManager(BaseUserManager):
         if not email:
             raise ValueError("Users must have an email address")
         
-        email.self.normalize_email(email) #Converts in lowercase the 2nd half of an email
+        email = self.normalize_email(email) #Converts in lowercase the 2nd half of an email
         user = self.model(email=email, name=name)
         user.set_password(password)
         user.save(using=self._db)
