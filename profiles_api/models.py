@@ -23,11 +23,26 @@ class UserProfileManager(BaseUserManager):
         """Create and save a new superuser"""
         user = self.create_user(email, name, password)
 
-        user.is_super_user = True
+        user.is_superuser = True
         user.is_staff = True
         user.save(using=self._db)
 
         return user
+
+    def del_user(request, username):    
+        try:
+            u = User.objects.get(username = username)
+            u.delete()
+            messages.success(request, "The user is deleted")            
+
+        except User.DoesNotExist:
+            messages.error(request, "User doesnot exist")    
+            return render(request, 'front.html')
+
+        except Exception as e: 
+            return render(request, 'front.html',{'err':e.message})
+
+        return render(request, 'front.html')
 
 
 

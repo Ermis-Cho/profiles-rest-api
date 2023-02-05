@@ -109,3 +109,24 @@ e.g. (env) vagrant@ubuntu-bionic:/vagrant$ python manage.py makemigrations profi
 
 # How to make migrations/set up a database
 (env) vagrant@ubuntu-bionic:/vagrant$ python manage.py migrate
+
+#How to create a is_super_user:
+    cd /vagrant
+    source ~env/bin/activate
+    python manage.py create_superuser
+
+# Django admin url:
+    <link>:<port>/admin
+
+
+# How to convert a user a user into a superuser
+    # From Django shell:
+        python manage.py shell
+    # Run this:
+        from django.contrib.auth import get_user_model
+        User = get_user_model()
+        user = User.objects.get(username="<username>")
+        user.is_staff = True
+        user.is_admin = True
+        user.is_superuser = True
+        user.save()
