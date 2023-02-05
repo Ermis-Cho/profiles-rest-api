@@ -130,3 +130,10 @@ e.g. (env) vagrant@ubuntu-bionic:/vagrant$ python manage.py makemigrations profi
         user.is_admin = True
         user.is_superuser = True
         user.save()
+
+# API view: describe logic to make API endpoint
+    Uses standard HTTP methods for functions
+    Gives most control over the logic:
+        Perfect for implementing complex logic
+        Calling other APIs
+        Working with local files
