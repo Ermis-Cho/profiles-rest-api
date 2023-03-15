@@ -3,7 +3,7 @@
 set -e
 
 # TODO: Set to URL of git repo.
-PROJECT_GIT_URL='https://github.com/Ermis-Cho/profiles-rest-api.git'
+PROJECT_GIT_URL='https://github.com/ErmisCho/profiles-rest-api.git'
 
 #the server directory of where the project is going to be stored
 PROJECT_BASE_PATH='/usr/local/apps/profiles-rest-api'
