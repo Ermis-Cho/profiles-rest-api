@@ -126,4 +126,4 @@ STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = "profiles_api.UserProfile"
 
-STATIC_URL = "static/"
+STATIC_ROOT = "static/"
