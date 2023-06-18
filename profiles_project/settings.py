@@ -23,11 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '--secret-key-to-be-replaced--'
 
 if os.path.exists("settings/dev.py"):
-    from settings.prod import *
+    from settings.dev import *
 elif os.path.exists("settings/prod.py"):
     from settings.prod import *
 elif os.path.exists("settings/github.py"):
-    from settings.prod import *
+    from settings.github import *
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
